@@ -9,7 +9,7 @@
 
     <section>
         <div class="container py-4">
-            <h1> Homepage</h1>
+            <h1> Movies</h1>
         </div>
     </section>
 
