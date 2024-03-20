@@ -17,4 +17,18 @@ class MovieController extends Controller
 
         return view('movies.index', compact('movies'));
     }
+
+    //* mostra il dettaglio di un elemento della risorsa movie
+    public function show(int $id)
+    {
+        // $movies = Movie::where('id', $id)->first();
+
+        $movie = Movie::find($id);
+
+        // if (empty($movie)) {
+        //     abort(404);
+        // }
+
+        return view('movies.show', compact('movie'));
+    }
 }

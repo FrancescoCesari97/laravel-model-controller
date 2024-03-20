@@ -18,10 +18,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a @class([
-                                'nav-link',
-                                'active' => Route::currentRouteName() == 'movies',
-                            ]) href="{{ route('movies.index') }}">Movies</a>
+                            <a @class(['nav-link', 'active' => Route::currentRouteName() == 'movie']) href="{{ route('movies.index') }}">Movies</a>
                         </li>
 
 

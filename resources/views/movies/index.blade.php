@@ -22,6 +22,10 @@
                             </a>
 
                             <h3 class="fs-6 ">{{ $movie->title }}</h3>
+                            <a
+                                href="{{ route('movies.show', [
+                                    'id' => $movie->id,
+                                ]) }}">Details</a>
                         </div>
                     </div>
                 @empty
